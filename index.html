@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Side Navbar Using HTML and CSS</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <section class="main">
+        <div class="menuBtn" onclick="showNav()" id="menuBtn"></div>
+        <div class="sideNavbar" id="sideNavbar">
+            <h2>Side Navbar</h2>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Testimonials</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+        </div>
+    </section>
+
+<script>
+    function showNav()
+    {
+        document.getElementById("sideNavbar").classList.toggle("show")
+        document.getElementById("menuBtn").classList.toggle("close")
+    }
+</script>
+</body>
+</html>
